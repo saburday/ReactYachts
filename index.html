@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>React</title>
+    <script src="js/react.js"></script>
+    <script src="js/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="example"></div>
+
+    <script type="text/babel">
+      var Task = React.createClass ({
+        render:function (){
+          return (
+            <div ClassName="box">
+             <div className="text">Какой-либо текст</div>
+             <button className="btn light">Редактировать</button>
+             <button className="btn red">Удалить</button>
+            </div>
+          );
+        }
+      });
+
+      const app = document.getElementById("example");
+
+      ReactDOM.render(
+        <div className="field">Testing</div>
+      ,app);
+      </script>
+  </body>
+</html>
